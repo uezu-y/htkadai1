@@ -1,0 +1,966 @@
+
+
+body {
+    color: #333;
+    font-family: "游ゴシック",YuGothic,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+body {
+    -webkit-font-smoothing: antialiased;
+}
+
+
+body, div, p, ul, ol, li, dl, dt, dd, table, th, td, img, figure, h1, h2, h3, h4, h5, h6, form, select {
+    margin: 0;
+    padding: 0;
+}
+
+*, *:before, *:after {
+    word-break: break-all;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+
+Header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 1080px)
+{
+Header {
+    background-color: #fff;
+    z-index: 10;
+}
+}
+
+
+@media screen and (max-width: 1080px)
+{
+Header {
+    position: fixed !important;
+}
+}
+
+@media screen and (max-width: 767px)
+{
+Header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+}
+
+
+Header {
+    width: 100%;
+    position: absolute;
+}
+
+
+
+
+
+.HeaderContainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 0px 0px 36px;
+    max-width: 100%;
+    position: relative;
+}
+
+
+@media screen and (max-width: 767px)
+{
+.HeaderContainer {
+    max-width: 100%;
+    margin: 0 20px;
+}
+}
+
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 768px)
+{
+.HeaderLogo:hover {
+    opacity: .8;
+}
+}
+
+@media screen and (min-width: 768px)
+{
+.HeaderLogo {
+    transition: opacity .2s;
+}
+}
+
+
+.HeaderLogo__image--pc {
+    display: block;
+    height: 20px;
+    width: auto;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+
+
+@media screen and (max-width: 767px)
+{
+.HeaderLogo__image--pc {
+    display: none;
+}
+}
+
+
+.HeaderLogo__image--sp {
+    display: none;
+    height: 16px;
+    width: auto;
+}
+
+
+
+@media screen and (max-width: 767px)
+{
+.HeaderLogo__image--sp {
+    display: block;
+}
+}
+
+
+.HeaderNavDiv {
+    display: none;
+}
+
+@media screen and (max-width: 1080px)
+{
+.HeaderNavDiv {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 21px;
+    z-index: 100;
+}
+}
+
+
+@media screen and (max-width: 1080px)
+{
+.HeaderNavDiv_line:first-child {
+    top: 0;
+}
+}
+
+@media screen and (max-width: 1080px)
+{
+.HeaderNavDiv_line {
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    transform: translate(0,-50%);
+    border-radius: 10px;
+    transition: top .2s,transform .2s,opacity .3s;
+}
+}
+
+@media screen and (max-width: 1080px)
+{
+.HeaderNavDiv {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 21px;
+    z-index: 100;
+}
+}
+
+@media screen and (max-width: 1080px)
+{
+.HeaderNavDiv_line {
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    transform: translate(0,-50%);
+    border-radius: 10px;
+    transition: top .2s,transform .2s,opacity .3s;
+}
+}
+
+@media screen and (max-width: 1080px)
+{
+.HeaderNavDiv {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 21px;
+    z-index: 100;
+}
+}
+
+@media screen and (max-width: 1080px)
+{
+.HeaderNavDiv_line:last-child {
+    top: 100%;
+}
+}
+
+@media screen and (max-width: 1080px)
+{
+.HeaderNavDiv_line {
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    transform: translate(0,-50%);
+    border-radius: 10px;
+    transition: top .2s,transform .2s,opacity .3s;
+}
+}
+
+
+@media screen and (max-width: 1080px)
+{
+.HeaderNavDiv {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 21px;
+    z-index: 100;
+}
+}
+
+
+.HeaderNavUllist {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+@media screen and (max-width: 1080px)
+{
+.HeaderNavUllist {
+    overflow-y: scroll;
+    position: fixed;
+    top: 60px;
+    left: 100%;
+    width: 100%;
+    display: block;
+    transition: transform .5s;
+    z-index: 99;
+    background-color: rgba(0,0,0,.8);
+    -webkit-overflow-scrolling: touch;
+    height: 100%;
+}
+}
+
+@media screen and (max-width: 767px)
+{
+.HeaderNavUllist {
+    top: 52px;
+}
+}
+
+
+
+ul, ol {
+    list-style: none;
+}
+
+
+
+.HeaderNavLilist {
+    margin-right: 45px;
+}
+
+
+@media screen and (max-width: 1080px)
+{
+.HeaderNavLilist {
+    margin-right: 0;
+}
+}
+
+@media screen and (min-width: 768px)
+{
+.HeaderNavLilist:hover {
+    opacity: .8;
+}
+}
+
+
+@media screen and (min-width: 768px)
+{
+.HeaderNavLilist {
+    transition: opacity .2s;
+}
+}
+
+
+
+ul, ol {
+    list-style: none;
+}
+
+
+.HeaderNavA-link>span:first-child {
+    font-family: 'Lato',sans-serif;
+    font-weight: 900;
+}
+
+.HeaderNavA-link>span {
+    display: block;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 1080px)
+{
+.HeaderNavA-link>span:first-child {
+    font-size: 16px;
+    letter-spacing: 5px;
+    color: #fff;
+}
+}
+
+
+.HeaderNavA-link>span:last-child {
+    font-size: 10px;
+}
+
+
+@media screen and (max-width: 1080px)
+{
+.HeaderNavA-link>span:last-child {
+    font-size: 12px;
+    margin-top: 10px;
+    color: #f79214;
+    letter-spacing: 2px;
+}
+}
+
+
+
+
+
+.HeaderNavA-link {
+    display: block;
+}
+
+
+
+@media screen and (max-width: 1080px)
+{
+.HeaderNavA-link {
+    padding: 20px 0;
+}
+}
+
+
+.HeaderNavLilist-button:visited {
+    color: #fff;
+}
+
+@media screen and (min-width: 768px)
+{
+.HeaderNavLilist-button:hover {
+    opacity: .8;
+}
+}
+
+@media screen and (min-width: 768px)
+{
+.HeaderNavLilist-button {
+    transition: opacity .2s;
+}
+}
+
+
+.HeaderNavLilist-button {
+    align-items: center;
+    background-color: #f79214;
+    border: none;
+    border-radius: 38px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    font-size: 12px;
+    height: 40px;
+    padding: 0 20px;
+}
+
+
+@media screen and (max-width: 1080px)
+{
+.HeaderNavLilist-button {
+    font-size: 16px;
+    margin: 0 auto;
+    height: 60px;
+    width: 250px;
+}
+}
+
+main {
+    display: block;
+}
+
+
+@media screen and (max-width: 1080px)
+{
+main {
+    padding-top: 60px;
+}
+}
+
+
+@media screen and (max-width: 767px)
+{
+main {
+    padding-top: 52px;
+}
+}
+
+
+.FirstView {
+    background-image: url(//camp.potepan.com/wp-content/themes/potepancamp/assets/styles/../images/home/first-view/top-hero.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 100px;
+    padding-bottom: 28px;
+}
+
+
+@media screen and (max-width: 767px)
+{
+.FirstView {
+    background-image: none;
+    padding-top: 0;
+    padding-bottom: 35px;
+}
+}
+
+
+.FirstView__main-image--sp {
+    display: none;
+}
+.FirstView__main-image {
+    width: 100%;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+
+@media screen and (max-width: 767px)
+{
+.FirstView__main-image--sp {
+    display: block;
+}
+}
+
+
+.TitleDiv {
+    max-width: 1140px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+
+@media screen and (max-width: 767px)
+{
+.TitleDiv {
+    margin-top: -45vw;
+}
+}
+
+
+@media screen and (max-width: 767px)
+{
+.TitleDiv {
+    max-width: none;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+}
+
+.YeCirclePicture {
+    margin-bottom: 70px;
+    width: fit-content;
+}
+
+
+@media screen and (max-width: 767px)
+{
+.YeCirclePicture {
+    margin-bottom: 20px;
+    width: 100%;
+}
+}
+
+.TitleDivH2 {
+    color: #333;
+    font-family: 'Lato',sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 54px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 767px)
+{
+.TitleDivH2 {
+    font-size: 25px;
+    line-height: 36px;
+    margin-left: calc(((100vw - 100%)/2)*-1);
+    margin-right: calc(((100vw - 100%)/2)*-1);
+}
+}
+
+.FirstViewContent__images {
+    margin-bottom: 25px;
+}
+
+
+@media screen and (max-width: 767px)
+{
+.FirstViewContent__images {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    width: 100%;
+}
+}
+
+
+.FirstViewContent__images img {
+    margin-right: 8px;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+.FirstViewContent__images img:nth-of-type(2) {
+    width: 40%;
+}
+
+
+
+@media screen and (max-width: 767px)
+{
+.FirstViewContent__images img {
+    width: 27.5%;
+}
+}
+
+
+
+@media screen and (max-width: 767px)
+{
+.FirstViewContent__images img {
+    width: 27.5%;
+}
+}
+
+
+.FirstViewContent__images img {
+    margin-right: 8px;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+
+.FirstViewContent__images img:last-of-type {
+    margin-right: 0;
+}
+
+@media screen and (max-width: 767px)
+{
+.FirstViewContent__images img {
+    width: 27.5%;
+}
+}
+
+.FirstViewContent__images img {
+    margin-right: 8px;
+}
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+.circle-button {
+    display: flex;
+}
+
+@media screen and (max-width: 767px)
+{
+.circle-button {
+    flex-direction: column;
+}
+}
+
+
+.circle-button a:first-of-type {
+    margin-right: 15px;
+    width: 306px;
+}
+
+@media screen and (min-width: 768px)
+{
+.circle-button a:hover {
+    opacity: .8;
+}
+}
+
+
+.circle-button a:visited {
+    color: #fff;
+}
+
+@media screen and (max-width: 767px)
+{
+.circle-button a:first-of-type {
+    margin-right: 0;
+}
+}
+
+.circle-button a {
+    align-items: center;
+    background-color: #f79214;
+    border: none;
+    border-radius: 38px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 700;
+    height: 64px;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 767px)
+{
+.circle-button a {
+    width: 100% !important;
+}
+}
+
+
+.circle-button a:last-of-type {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    color: #333;
+    width: 176px;
+}
+
+@media screen and (max-width: 767px)
+{
+.circle-button a:last-of-type {
+    display: none;
+}
+}
+
+
+.SmallSentences {
+    color: #a2a2a4;
+    font-size: 12px;
+}
+
+p {
+    color: #333;
+}
+p {
+    line-height: 1.5;
+}
+
+
+
+div {
+    display: block;
+}
+
+
+.AroundVideo {
+    background-color: #f79214;
+    padding: 44px 0;
+}
+
+
+@media screen and (max-width: 767px)
+{
+.AroundVideo {
+    padding: 30px 0;
+}
+}
+
+
+.AroundVideoSec {
+    max-width: 1140px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width: 767px)
+{
+.AroundVideoSec {
+    max-width: none;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+}
+
+
+@media screen and (max-width: 1024px)
+{
+.AroundVideoSec {
+    flex-direction: column;
+}
+}
+
+
+
+.About__video {
+    width: 50%;
+}
+
+
+@media screen and (max-width: 1024px)
+{
+.About__video {
+    margin-bottom: 16px;
+    width: 75%;
+}
+}
+
+
+@media screen and (max-width: 767px)
+{
+.About__video {
+    width: 100%;
+}
+}
+
+
+.AroundVideoTitle {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    margin-bottom: 0;
+    margin-left: 32px;
+}
+
+.AroundVideoTitle:after {
+    display: none;
+}
+
+.AroundVideoTitle:after {
+    border-bottom: 6px solid #f79214;
+    content: '';
+    display: block;
+    margin-top: 10px;
+    width: 50px;
+}
+
+@media screen and (max-width: 1024px)
+{
+.AroundVideoTitle {
+    margin-left: 0;
+    width: 75%;
+}
+}
+
+
+@media screen and (max-width: 767px)
+{
+.AroundVideoTitle {
+    margin-bottom: 0;
+    width: 100%;
+}
+}
+
+
+.AroundVideoTitle h2 {
+    font-family: 'Lato',sans-serif;
+    font-size: 51px;
+    font-weight: 700;
+    line-height: 74px;
+    margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 767px)
+{
+.AroundVideoTitle h2 {
+    font-size: 33px;
+    line-height: 1.2;
+    text-align: center;
+}
+}
+
+
+.AroundVideoTitle h2, .AroundVideoTitle p {
+    color: #fff;
+    text-align: left;
+}
+
+
+.AroundVideoTitle h2 {
+    font-family: "游ゴシック",YuGothic,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+    font-size: 38px;
+    font-weight: 900;
+    letter-spacing: .1em;
+    line-height: 54px;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 400px)
+{
+.AroundVideoTitle h2 {
+    font-size: 33px;
+    line-height: 1.4;
+    word-break: keep-all;
+}
+}
+
+
+.AroundVideoTitle h2 span {
+    font-weight: 900;
+}
+
+
+
+@media screen and (max-width: 767px)
+{
+.AroundVideoTitle h2 span {
+    letter-spacing: 1px;
+}
+}
+
+.AroundVideoTitle h2>span {
+    font-family: 'Lato',sans-serif;
+    font-size: 38px;
+}
+
+
+.AroundVideoTitle br {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 400px)
+{
+.AroundVideoTitle br {
+    display: block;
+}
+}
+
+
+.AroundVideoTitle p {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    margin-bottom: 16px;
+}
+
+
+@media screen and (max-width: 767px)
+{
+.AroundVideoTitle p {
+    font-size: 16px;
+    line-height: 21px;
+}
+}
+
+.AroundVideobutton {
+    color: #fff;
+    display: flex;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.AroundVideobutton>img {
+    margin-right: 5px;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
